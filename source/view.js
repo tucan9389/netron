@@ -5168,6 +5168,7 @@ view.ModelFactoryService = class {
                     let match = undefined;
                     try {
                         match = modelFactory.match(context);
+                        console.log("match: " + match)
                         if (!match) {
                             return nextModule();
                         }
